@@ -27,15 +27,14 @@
 
 <script src="phonegap.js"></script><!--necesario*/-->
 <script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
-
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
 function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
@@ -50,8 +49,9 @@ function MM_swapImage() { //v3.0
 }
 </script>
 </head>
-<body onLoad="MM_preloadImages('imagenes/img2.jpg')">
+<body onLoad="MM_preloadImages('imagenes/img2.jpg','imagenes/img8.jpg','imagenes/img4.png')">
 <div data-role="page" id="principal" data-theme="a">
+
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
 <h1>Dia Mundial de la Salud</h1>
 </div>
@@ -207,9 +207,11 @@ De manera más específica, la OMS busca 3 objetivos con esta campaña.
 Que el público en general tenga una mayor información sobre la depresión, sus causas y las ayudas que existen a la hora de prevenirla y tratarla.
 Que las personas con depresión logren romper su aislamiento y pidan ayuda.
 Que los familiares y amigos de personas con depresión adquieran los conocimientos necesarios para poder ayudarlas.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','imagenes/img8.jpg',1)"><img src="imagenes/img6.jpg" width="500" height="500" id="Image32"></a>
 
     </div>
     </div>
+    
     <div data-role="footer" align="center" data-theme="a" data-position="fixed" >
     <div>
     	<img src="imagenes/persona_azul.png" width="46" height="46" alt="pie">
@@ -263,20 +265,54 @@ Los gobiernos tienen la responsabilidad de garantizar la salud de sus pueblos, l
     <h4>Luis Cambron Ortega</h4>
     </div>
     </div>
+    
     <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
-    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
     <h1>Cobertura Sanitaria Universal </h1>
-    <p> La cobertura sanitaria universal (CSU) implica que todas las personas y comunidades reciban los servicios de salud que necesitan sin tener que pasar penurias financieras para pagarlos. Abarca toda la gama de servicios de salud esenciales de calidad, desde la promoción de la salud hasta la prevención, el tratamiento, la rehabilitación y los cuidados paliativos.
+    </div>
+    <div data-role="content" align="center">
+<div>  
+<p> La cobertura sanitaria universal (CSU) implica que todas las personas y comunidades reciban los servicios de salud que necesitan sin tener que pasar penurias financieras para pagarlos. Abarca toda la gama de servicios de salud esenciales de calidad, desde la promoción de la salud hasta la prevención, el tratamiento, la rehabilitación y los cuidados paliativos.
 
 La CSU permite a todos acceder a servicios que atienden las causas más importantes de las enfermedades y la muerte, y asegura que la calidad de esos servicios sea suficientemente buena para mejorar la salud de las personas que los reciben.
 
 Proteger a las personas de las consecuencias financieras que puede tener el pago de los servicios de salud reduce el riesgo de que se empobrezcan a resultas de una enfermedad inesperada que exija la utilización de los ahorros de toda una vida, la venta de bienes o el recurso a préstamos, que pueden destruir su futuro y a menudo el de sus hijos.
 
 Lograr la CSU es una de las metas que se fijaron los países que adoptaron los Objetivos de Desarrollo Sostenible en 2015. Los países que progresan en el logro de la CSU también avanzarán hacia las demás metas relacionadas con la salud y los demás objetivos. La buena salud no solo hace posible que los niños aprendan y los adultos se ganen la vida y la gente escapen de la pobreza, sino que también sienta las bases para el desarrollo económico a largo plazo.</p>
-   <a href="https://www.who.int/es/news-room/fact-sheets/detail/universal-health-coverage-(uhc)"> Mas Informacion: </a> 
+  
+     <a href="https://www.who.int/es/news-room/fact-sheets/detail/universal-health-coverage-(uhc)"> Mas Informacion: </a>
+      
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','imagenes/img4.png',1)"><img src="imagenes/img7.png" width="500" height="300" id="Image33"></a>
+  
+<div data-role="footer" align="center" data-theme="a" data-position="fixed" >
+    
+  <div>
+    
+    	<img src="imagenes/persona_azul.png" width="46" height="46" alt="pie">
+        
+    <h4>App-3 Dia Mundial de la Salud OMS</h4>
+    <h4>Luis Cambron Ortega</h4>
     </div>
-    <div data-role="content" align="center"><div></div>
     </div>
+    
+   <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    </div>
+    <h1>¿Que es lo que no planifica la Cobertura Sanitaria Universal ?</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+    <p>La CSU no implica la cobertura gratuita de todas las intervenciones sanitarias posibles, independientemente de su costo, ya que ningún país puede permitirse ofrecer todos los servicios gratuitamente de forma sostenible.
+La CSU no se refiere únicamente a la financiación de la salud: abarca todos los componentes del sistema de salud, a saber, los sistemas de prestación de servicios de salud, el personal sanitario, las instalaciones sanitarias o las redes de comunicación, las tecnologías sanitarias, los sistemas de información, los mecanismos de garantía de la calidad, la gobernanza y la legislación.
+La CSU no solo tiene por finalidad asegurar un conjunto de servicios de salud mínimos, sino también lograr la ampliación progresiva de la cobertura de los servicios de salud y de la protección financiera, conforme se disponga de más recursos.
+La CSU no solo engloba los servicios de tratamiento específicos, sino también incluye los servicios a la población como las campañas de salud pública, la adición de flúor al agua, el control de los lugares de reproducción de los mosquitos, entre otros.
+La CSU comprende mucho más que solo la salud. Adoptar medidas para alcanzar la cobertura sanitaria universal equivale a adoptar medidas para lograr la equidad, las prioridades en materia de desarrollo y la inclusión y cohesión sociales. </p>
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','imagenes/img8.jpg',1)"><img src="imagenes/img6.jpg" width="500" height="500" id="Image32"></a>
+
+    </div>
+    </div>
+    
     <div data-role="footer" align="center" data-theme="a" data-position="fixed" >
     <div>
     	<img src="imagenes/persona_azul.png" width="46" height="46" alt="pie">
@@ -284,28 +320,13 @@ Lograr la CSU es una de las metas que se fijaron los países que adoptaron los O
     <h4>App-3 Dia Mundial de la Salud OMS</h4>
     <h4>Luis Cambron Ortega</h4>
     </div>
-    </div>
-    <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
-    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
-    <h1>¿Que es lo que NO incluye la Cobertura Sanitaria Universal? </h1>
-    <p>La CSU no implica la cobertura gratuita de todas las intervenciones sanitarias posibles, independientemente de su costo, ya que ningún país puede permitirse ofrecer todos los servicios gratuitamente de forma sostenible.
-La CSU no se refiere únicamente a la financiación de la salud: abarca todos los componentes del sistema de salud, a saber, los sistemas de prestación de servicios de salud, el personal sanitario, las instalaciones sanitarias o las redes de comunicación, las tecnologías sanitarias, los sistemas de información, los mecanismos de garantía de la calidad, la gobernanza y la legislación.
-La CSU no solo tiene por finalidad asegurar un conjunto de servicios de salud mínimos, sino también lograr la ampliación progresiva de la cobertura de los servicios de salud y de la protección financiera, conforme se disponga de más recursos.
-La CSU no solo engloba los servicios de tratamiento específicos, sino también incluye los servicios a la población como las campañas de salud pública, la adición de flúor al agua, el control de los lugares de reproducción de los mosquitos, entre otros.
-La CSU comprende mucho más que solo la salud. Adoptar medidas para alcanzar la cobertura sanitaria universal equivale a adoptar medidas para lograr la equidad, las prioridades en materia de desarrollo y la inclusión y cohesión sociales. </p>
-    </div>
-    <div data-role="content" align="center">
-    <div></div>
-    </div>
-
-    <div>
-    	<img src="imagenes/persona_azul.png" width="46" height="46" alt="pie">
-        </div>
-    <h4>App-3 Dia Mundial de la Salud</h4>
-    <h4>Luis Cambron Ortega</h4>
-    </div>
-    </div>
+    </div
+  
+  
+  
+  
+  
+    
 </body>
 </html>
-    <h4>Ap</h4>
-    <h4>App-3 Dia Mundial de la Salud OMS</h4>
+    
